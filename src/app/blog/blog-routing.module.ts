@@ -1,9 +1,12 @@
-import {NgModule} from '@angular/core';
-import {Routes, RouterModule} from '@angular/router';
+import { NgModule } from '@angular/core';
+import { Routes, RouterModule } from '@angular/router';
 
-import {BlogComponent} from './blog.component';
+import { BlogComponent } from './blog.component';
 
 const routes: Routes = [
+  {
+    path: '', loadChildren: () => import('../blog-root/blog-root.module').then(m => m.BlogRootModule)
+  },
   {
     path: ':slug',
     component: BlogComponent,
@@ -18,5 +21,5 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
-export class BlogRoutingModule {}
+export class BlogRoutingModule { }
 

@@ -1,0 +1,14 @@
+<p>blog-root works!</p>
+
+<ul>
+  <li *ngFor="let page of links$ | async">
+    <!-- {{ page.route }} -->
+    <a [routerLink]="page.route">
+      <div>
+        <h2>{{ page.title }}</h2>
+        <p>{{ page.authors }}</p>
+        <b>{{ page.description }}</b>
+      </div>
+    </a>
+  </li>
+</ul>
