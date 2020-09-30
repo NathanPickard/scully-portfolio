@@ -9,6 +9,7 @@ import { Observable } from 'rxjs';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
+  
   links$: Observable<ScullyRoute[]> = this.scully.available$;
 
   constructor(private scully: ScullyRoutesService) { }
