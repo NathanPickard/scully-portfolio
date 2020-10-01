@@ -1,2 +1,42 @@
 <app-navigation></app-navigation>
+
+<mat-sidenav-container>
+
+  <mat-sidenav #sidenav over>
+    <mat-list>
+      <mat-list-item>
+        <a routerLink="/" routerLinkActive="active">
+          Home
+        </a>
+        <a routerLink="/blog" routerLinkActive="active">
+          Blog
+        </a>
+        <a routerLink="/portfolio" routerLinkActive="active">
+          Portfolio
+        </a>
+        <a routerLink="/about" routerLinkActive="active">
+          About
+        </a>
+      </mat-list-item>
+    </mat-list>
+
+  </mat-sidenav>
+
+</mat-sidenav-container>
+
 <router-outlet></router-outlet>
+
+<footer>
+  <mat-toolbar>
+    <mat-toolbar-row fxLayoutAlign="center center">
+
+      <a href="https://github.com/NathanPickard" mat-stroked-button target="_blank"
+        style="text-decoration: none; color: white;">
+        <mat-icon>copyright</mat-icon>
+        2020 Built by
+        Nathan Pickard
+      </a>
+
+    </mat-toolbar-row>
+  </mat-toolbar>
+</footer>

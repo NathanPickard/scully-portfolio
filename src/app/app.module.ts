@@ -9,12 +9,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { ScullyLibModule } from '@scullyio/ng-lib';
 
 import { AppComponent } from './app.component';
+import { HomeComponent } from './home/home.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    HomeComponent,
     NavigationComponent,
     AboutComponent
   ],
