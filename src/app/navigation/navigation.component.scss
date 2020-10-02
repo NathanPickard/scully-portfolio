@@ -1,5 +1,12 @@
 a {
-  font-size: 18px;
+  font-size: 17px;
+}
+
+.nav-header {
+  position: sticky;
+   position: -webkit-sticky;
+   top: 0;
+   z-index: 1000;
 }
 
 .spacer {
