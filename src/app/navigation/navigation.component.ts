@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { SideNavService } from '../side-nav.service';
+
 @Component({
   selector: 'app-navigation',
   templateUrl: './navigation.component.html',
@@ -7,9 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavigationComponent implements OnInit {
 
-  constructor() { }
+  constructor(private sideNavService: SideNavService) { }
 
   ngOnInit(): void {
+  }
+
+  toggleSidenav() {
+    this.sideNavService.toggleNav();
   }
 
 }
