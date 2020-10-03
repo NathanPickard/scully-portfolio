@@ -13,7 +13,8 @@ const routes: Routes = [
   },
   {
     path: 'about', component: AboutComponent
-  }
+  },
+  { path: 'portfolio', loadChildren: () => import('./portfolio/portfolio.module').then(m => m.PortfolioModule) }
 ];
 
 @NgModule({
