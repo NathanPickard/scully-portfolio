@@ -6,20 +6,20 @@ import { MatListModule } from '@angular/material/list';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
 
+const materialModules = [
+  MatButtonModule,
+  MatIconModule,
+  MatListModule,
+  MatSidenavModule,
+  MatToolbarModule
+];
+
 @NgModule({
   imports: [
-    MatButtonModule,
-    MatIconModule,
-    MatListModule,
-    MatSidenavModule,
-    MatToolbarModule
+    materialModules
   ],
   exports: [
-    MatButtonModule,
-    MatIconModule,
-    MatListModule,
-    MatSidenavModule,
-    MatToolbarModule
+    materialModules
   ]
 })
 
