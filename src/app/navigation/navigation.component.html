@@ -1,6 +1,7 @@
 <mat-toolbar class="nav-header" color="primary">
 
-  <mat-toolbar-row fxLayoutGap="20px">
+  <!-- <mat-toolbar-row fxLayoutGap="20px"> -->
+  <mat-toolbar-row>
 
     <button mat-icon-button (click)="toggleSidenav()" fxShow="true" fxHide.gt-sm>
       <mat-icon>menu</mat-icon>
@@ -10,18 +11,21 @@
 
     <span class="spacer"></span>
 
-    <a mat-stroked-button routerLink="/" routerLinkActive="active">
-      Home
-    </a>
-    <a mat-stroked-button routerLink="/blog" routerLinkActive="active">
-      Blog
-    </a>
-    <a mat-stroked-button routerLink="/portfolio" routerLinkActive="active">
-      Portfolio
-    </a>
-    <a mat-stroked-button routerLink="/about" routerLinkActive="active">
-      About
-    </a>
+    <div fxFlex="40%" fxLayoutGap="25px">
+      <a mat-stroked-button routerLink="/" routerLinkActive="active">
+        Home
+      </a>
+      <a mat-stroked-button routerLink="/blog" routerLinkActive="active">
+        Blog
+      </a>
+      <a mat-stroked-button routerLink="/portfolio" routerLinkActive="active">
+        Portfolio
+      </a>
+      <a mat-stroked-button routerLink="/about" routerLinkActive="active">
+        About
+      </a>
+
+    </div>
   </mat-toolbar-row>
 
 </mat-toolbar>

@@ -11,8 +11,7 @@ export class NavigationComponent implements OnInit {
 
   constructor(private sideNavService: SideNavService) { }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void { }
 
   toggleSidenav() {
     this.sideNavService.toggleNav();
