@@ -1,13 +1,11 @@
-<p>blog-root works!</p>
-
 <ul>
-  <li *ngFor="let page of links$ | async">
+  <li *ngFor="let post of posts$ | async">
     <!-- {{ page.route }} -->
-    <a [routerLink]="page.route">
+    <a [routerLink]="post.route">
       <div>
-        <h2>{{ page.title }}</h2>
-        <p>{{ page.authors }}</p>
-        <b>{{ page.description }}</b>
+        <h2>{{ post.title }}</h2>
+        <p>{{ post.authors }}</p>
+        <b>{{ post.description }}</b>
       </div>
     </a>
   </li>

@@ -13,10 +13,6 @@ export class HomeComponent implements OnInit {
 
   constructor(private scully: ScullyRoutesService) { }
 
-  ngOnInit(): void {
-    this.links$.subscribe((links) => {
-      console.log(links);
-    });
-  }
+  ngOnInit(): void { }
 
 }
