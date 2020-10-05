@@ -1,12 +1,48 @@
-<ul>
-  <li *ngFor="let post of posts$ | async">
-    <!-- {{ page.route }} -->
-    <a [routerLink]="post.route">
-      <div>
-        <h2>{{ post.title }}</h2>
-        <p>{{ post.authors }}</p>
-        <b>{{ post.description }}</b>
-      </div>
-    </a>
-  </li>
-</ul>
+<div fxLayout="column" fxLayoutAlign="center center">
+  <h2>The latest, greatest posts</h2>
+</div>
+
+<div class="blog-posts">
+  <ul>
+    <li *ngFor="let post of posts$ | async">
+      <!-- {{ page.route }} -->
+      <a [routerLink]="post.route">
+        <div class="post-card">
+          <h2>{{ post.title }}</h2>
+          <p>{{ post.authors }}</p>
+          <b>{{ post.description }}</b>
+        </div>
+      </a>
+    </li>
+  </ul>
+</div>
+
+<div fxLayoutAlign="center center">
+
+  <!-- <div fxLayoutGap="30px" fxLayout="column" fxFlex="80"> -->
+  <div fxLayoutGap="30px" fxLayout="column" style="max-width: 700px;">
+
+    <div *ngFor="let post of posts$ | async">
+
+      <mat-card>
+        <mat-card-header>
+          <mat-card-title>
+            <a [routerLink]="post.route">
+              {{ post.title }}
+            </a>
+          </mat-card-title>
+          <mat-card-subtitle>
+            {{ post.authors }}
+          </mat-card-subtitle>
+        </mat-card-header>
+
+        <mat-card-content>
+          <b>{{ post.description }}</b>
+        </mat-card-content>
+
+      </mat-card>
+
+    </div>
+  </div>
+
+</div>
