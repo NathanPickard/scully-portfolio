@@ -1,5 +1,5 @@
-<div fxLayout="column" fxLayoutAlign="center center">
-  <h2>The latest, greatest posts</h2>
+<div fxLayout="column" fxLayoutAlign="center center" style="margin-top: 16px;">
+  <h1>The latest, greatest posts</h1>
 </div>
 
 <div class="blog-posts">
@@ -32,7 +32,7 @@
             </a>
           </mat-card-title>
           <mat-card-subtitle>
-            {{ post.authors }}
+            {{ post.date | date: 'shortDate' }}
           </mat-card-subtitle>
         </mat-card-header>
 
