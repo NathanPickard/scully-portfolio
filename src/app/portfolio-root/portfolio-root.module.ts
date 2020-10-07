@@ -4,12 +4,17 @@ import { CommonModule } from '@angular/common';
 import { PortfolioRootRoutingModule } from './portfolio-root-routing.module';
 import { PortfolioRootComponent } from './portfolio-root.component';
 
+import { MaterialModule } from '../material.module';
+import { FlexLayoutModule } from '@angular/flex-layout';
+
 
 @NgModule({
   declarations: [PortfolioRootComponent],
   imports: [
     CommonModule,
-    PortfolioRootRoutingModule
+    PortfolioRootRoutingModule,
+    MaterialModule,
+    FlexLayoutModule
   ]
 })
 export class PortfolioRootModule { }
