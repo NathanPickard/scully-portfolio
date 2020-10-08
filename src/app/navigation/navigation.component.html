@@ -2,12 +2,12 @@
 
   <mat-toolbar-row>
 
-    <button mat-icon-button (click)="toggleSidenav()" fxShow="true" fxHide.gt-sm>
-      <mat-icon>menu</mat-icon>
-    </button>
-
     <!-- <div fxFlex="40%" fxLayoutGap="20px" fxLayoutAlign="center center"> -->
     <div fxLayoutGap="15px" fxFlex="20%">
+
+      <button mat-icon-button (click)="toggleSidenav()" fxShow="true" fxHide.gt-sm>
+        <mat-icon>menu</mat-icon>
+      </button>
 
       <a mat-stroked-button routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"
         fxHide.lt-sm>
@@ -26,14 +26,14 @@
     </div>
 
     <!-- <div class="title-center"> -->
-    <div fxLayoutAlign="center center" fxFlex="60%">
+    <!-- <div fxLayoutAlign="center center" fxFlex="60%">
       <h3>Nathan Pickard</h3>
-    </div>
+    </div> -->
 
     <span class="spacer"></span>
 
     <!-- <div fxLayoutGap="10px" fxLayoutAlign="space-around center" fxFlex="20%"> -->
-    <div fxLayoutAlign="space-around center" fxFlex="20%">
+    <div fxLayoutAlign="space-around center" fxFlex="20%" fxLayoutGap="10px">
 
       <!-- <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24">
         <path
@@ -72,7 +72,7 @@
 
   </mat-toolbar-row>
 
-  </mat-toolbar>
+</mat-toolbar>
 
 <!-- <mat-toolbar>
   <mat-toolbar-row>
