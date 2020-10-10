@@ -2,12 +2,15 @@
 
   <mat-toolbar-row>
 
-    <!-- <div fxFlex="40%" fxLayoutGap="20px" fxLayoutAlign="center center"> -->
-    <div fxLayoutGap="15px" fxFlex="20%">
+    <div fxFlex="40%" fxLayoutGap="20px" fxLayoutAlign="center center">
+    <!-- <div fxLayoutGap="15px" fxFlex="20%"> -->
 
       <button mat-icon-button (click)="toggleSidenav()" fxShow="true" fxHide.gt-sm>
         <mat-icon>menu</mat-icon>
       </button>
+
+      <img src="https://website-images-nathan.s3-us-west-2.amazonaws.com/nathanpickard.com/1.svg" alt="logo"
+        style="width: 50px;">
 
       <a mat-stroked-button routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"
         fxHide.lt-sm>
