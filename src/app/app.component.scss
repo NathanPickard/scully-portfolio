@@ -2,13 +2,19 @@ footer {
   // background-color: #e0f2f1;
   background-color: #e1f5fe;
   text-decoration: none;
-  padding-bottom: 25px;
+  padding-bottom: 20px;
 }
 
 .all-wrap {
   min-height: 100vh;
   // background-color: #e0f2f1;
   background-color: #e1f5fe;
+}
+
+.profile-img {
+  max-width: 200px;
+  border-radius: 50%;
+  padding: 15px 25px 10px;
 }
 
 .twitter:hover {
