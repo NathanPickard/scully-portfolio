@@ -2,7 +2,6 @@
 
 <mat-sidenav-container class="all-wrap">
 
-
   <mat-sidenav #sidenav>
 
     <mat-nav-list>
@@ -19,9 +18,10 @@
 
   <mat-sidenav-content>
 
-    <div fxLayoutAlign="center center" fxLayoutRow="row" style="background-color: #e1f5fe; padding: 0px 40px 40px;">
+    <div fxLayoutAlign="center center" fxLayout="row" fxLayout.xs="column" fxLayoutGap="50px" fxLayoutGap.xs="20px"
+      style="background-color: #e1f5fe; padding: 0px 40px 20px;">
 
-      <div fxLayoutAlign="center center" fxLayout="column" style="padding-right: 30px;">
+      <div fxLayoutAlign="center center" fxLayout="column" style="text-align: center;">
         <h1>Nathan Pickard</h1>
 
         <!-- <mat-divider style="width: 20px;"></mat-divider> -->
@@ -41,7 +41,7 @@
           src="https://website-images-nathan.s3-us-west-2.amazonaws.com/nathanpickard.com/IMG_20201007_162639+(1).jpg"
           alt="Nathan Pickard">
 
-        <div fxLayoutAlign="space-around center" fxLayoutGap="10px">
+        <!-- <div fxLayoutAlign="space-around center" fxLayoutGap="10px">
 
           <a href="https://twitter.com/NathanPickard" mat-icon-button target="_blank">
             <svg class="twitter" style="width:28px;height:28px" viewBox="0 0 24 24">
@@ -71,7 +71,7 @@
             </svg>
           </a>
 
-        </div>
+        </div> -->
 
       </div>
 
@@ -89,7 +89,7 @@
 
   <div fxLayoutAlign="center center">
 
-    <div fxLayout="row" fxLayoutGap="30px" fxLayout.xs="column">
+    <div fxLayout="row" fxLayout.xs="column" fxLayoutGap="35px" fxLayoutGap.xs="10px">
 
       <a href="https://github.com/NathanPickard" mat-stroked-button target="_blank">
         <mat-icon>copyright</mat-icon>
