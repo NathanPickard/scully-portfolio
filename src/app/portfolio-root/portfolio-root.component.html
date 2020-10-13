@@ -4,12 +4,13 @@
 
 <div fxLayoutAlign="center center">
 
-  <div fxLayoutGap="30px" fxLayout="column" style="max-width: 600px;">
+  <!-- <div fxLayoutGap="30px" fxLayout="column" style="max-width: 600px;"> -->
+  <div fxLayoutGap="30px" fxLayout="column" style="max-width: 800px; min-width: 500px;">
 
     <div *ngFor="let project of portfolio$ | async">
 
       <mat-card>
-        <mat-card-header>
+        <mat-card-header fxLayoutAlign="center center">
           <mat-card-title>
             <a [routerLink]="project.route">
               {{ project.title }}
@@ -17,7 +18,7 @@
           </mat-card-title>
         </mat-card-header>
 
-        <mat-card-content>
+        <mat-card-content fxLayoutAlign="center center">
           <b>{{ project.description }}</b>
         </mat-card-content>
 

@@ -1,6 +1,6 @@
 ---
-title: primetime-movies
-description: Live music finder for the Portland, Oregon metro area
+title: Primetime Movies
+description: Discover the latest movie releases, most popular titles, and explore old favorites!
 tech: 
   - Angular
   - Firebase
