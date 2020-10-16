@@ -14,10 +14,6 @@
           style="width: 50px;">
       </a>
 
-      <!-- <a mat-stroked-button routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"
-        fxHide.lt-sm>
-        Home
-      </a> -->
       <a mat-stroked-button routerLink="/blog" routerLinkActive="active" fxHide.lt-sm>
         Blog
       </a>
@@ -30,15 +26,10 @@
 
     </div>
 
-    <!-- <div class="title-center"> -->
-    <!-- <div fxLayoutAlign="center center" fxFlex="60%">
-        <h3>Nathan Pickard</h3>
-      </div> -->
-
     <span class="spacer"></span>
 
     <!-- <div fxLayoutGap="10px" fxLayoutAlign="space-around center" fxFlex="20%"> -->
-    <div fxLayoutGap="10px" fxLayoutAlign="space-around center">
+    <div fxLayoutGap.gt-sm="20px" fxLayoutGap.lt-md="10px" fxLayoutAlign="space-around center" fxFlex.gt-md="25%">
 
       <!-- <div fxLayoutAlign="space-around center" fxFlex="20%" fxLayoutGap="10px"> -->
 
