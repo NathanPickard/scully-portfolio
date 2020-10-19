@@ -16,7 +16,7 @@ export class AppComponent implements OnInit {
   title = 'scully-portfolio';
 
   routes = [
-    { path: '/', name: 'Home' },
+    // { path: '/', name: 'Home' },
     { path: '/blog', name: 'Blog' },
     { path: '/portfolio', name: 'Portfolio' },
     { path: '/about', name: 'About' }
