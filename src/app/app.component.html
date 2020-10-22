@@ -18,20 +18,36 @@
 
   <mat-sidenav-content>
 
-
     <div class="app-header" fxLayoutAlign="center center" fxLayout="row" fxLayout.xs="column" fxLayoutGap="50px"
       fxLayoutGap.xs="15px">
 
       <div fxLayoutAlign="center center" fxLayout="column" style="text-align: center;">
-        <h1>Nathan Pickard</h1>
+        <h1 style="font-size: 35px;">Nathan Pickard</h1>
 
         <!-- <mat-divider style="width: 20px;"></mat-divider> -->
 
         <h2>Web Developer in Portland, Oregon</h2>
         <h3>I make ideas a reality using Javascript</h3>
-        <img
-          src="https://website-images-nathan.s3-us-west-2.amazonaws.com/nathanpickard.com/pVCahxP-oregon-outline-vector.svg"
-          style="max-width: 90px;" alt="Oregon">
+
+        <div fxLayout="row" fxLayoutAlign="center center">
+          <img
+            src="https://website-images-nathan.s3-us-west-2.amazonaws.com/nathanpickard.com/pVCahxP-oregon-outline-vector.svg"
+            style="max-width: 70px;" alt="Oregon">
+
+          <!-- <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+            <path fill="currentColor"
+              d="M12.89,3L14.85,3.4L11.11,21L9.15,20.6L12.89,3M19.59,12L16,8.41V5.58L22.42,12L16,18.41V15.58L19.59,12M1.58,12L8,5.58V8.41L4.41,12L8,15.58V18.41L1.58,12Z" />
+          </svg> -->
+
+          <!-- <img src="https://website-images-nathan.s3-us-west-2.amazonaws.com/nathanpickard.com/html-coding.svg"
+            style="max-width: 40px;"> -->
+
+          <svg style="width:44px;height:44px" className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
+              d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" /></svg>
+
+        </div>
       </div>
 
       <!-- <mat-divider [vertical]="true" style="height: 50px;"></mat-divider> -->
@@ -132,7 +148,7 @@
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
             <path
               d="M12 12.713l-11.985-9.713h23.971l-11.986 9.713zm-5.425-1.822l-6.575-5.329v12.501l6.575-7.172zm10.85 0l6.575 7.172v-12.501l-6.575 5.329zm-1.557 1.261l-3.868 3.135-3.868-3.135-8.11 8.848h23.956l-8.11-8.848z" />
-            </svg>
+          </svg>
         </a>
 
       </div>

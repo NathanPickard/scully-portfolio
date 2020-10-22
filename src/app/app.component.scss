@@ -8,11 +8,18 @@ footer {
 .all-wrap {
   min-height: 100vh;
   // background-color: #e0f2f1;
-  background-color: #e1f5fe;
+
+  // background-color: #e1f5fe;
+  background: linear-gradient(rgba(255, 255, 255, 0.8), rgb(255, 255, 255, 0.2)),
+    url("https://website-images-nathan.s3-us-west-2.amazonaws.com/nathanpickard.com/bg-018.jpg")
+      no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .profile-img {
-  max-width: 180px;
+  max-width: 170px;
   border-radius: 50%;
   padding: 15px 25px 10px;
 }
@@ -36,6 +43,6 @@ footer {
 }
 
 .app-header {
-  background-color: #e1f5fe;
+  // background-color: #e1f5fe;
   margin: 20px 40px;
 }
