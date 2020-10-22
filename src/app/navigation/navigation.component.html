@@ -3,7 +3,7 @@
   <mat-toolbar-row>
 
     <!-- <div fxLayoutGap="15px" fxFlex="20%"> -->
-    <div fxLayoutGap="20px">
+    <div fxLayoutGap.gt-xs="20px">
 
       <button mat-icon-button (click)="toggleSidenav()" fxShow="true" fxHide.gt-sm>
         <mat-icon>menu</mat-icon>
@@ -29,7 +29,8 @@
     <span class="spacer"></span>
 
     <!-- <div fxLayoutGap="10px" fxLayoutAlign="space-around center" fxFlex="20%"> -->
-    <div fxLayoutGap.gt-sm="20px" fxLayoutGap.lt-md="10px" fxLayoutAlign="space-around center" fxFlex.gt-md="25%">
+    <div fxLayoutGap.lt-sm="5px" fxLayoutGap.gt-sm="20px" fxLayoutGap.lt-md="10px" fxLayoutAlign="space-around center"
+      fxFlex.gt-md="20%" style="margin-right: 35px;">
 
       <!-- <div fxLayoutAlign="space-around center" fxFlex="20%" fxLayoutGap="10px"> -->
 

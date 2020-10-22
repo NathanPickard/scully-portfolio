@@ -17,15 +17,15 @@
   </ul>
 </div> -->
 
-<div fxLayoutAlign="center center">
+<div>
 
   <!-- <div fxLayoutGap="30px" fxLayout="column" fxFlex="80"> -->
-  <div fxLayoutGap="30px" fxLayout="column" style="max-width: 700px;">
+  <div fxLayoutGap="30px" fxLayout="column" fxLayoutAlign="center center">
 
-    <div *ngFor="let post of posts$ | async">
+    <div *ngFor="let post of posts$ | async" style="width: 80%; max-width: 500px;">
 
       <mat-card>
-        <mat-card-header>
+        <mat-card-header fxLayoutAlign="center center">
           <mat-card-title>
             <a [routerLink]="post.route">
               {{ post.title }}
@@ -36,7 +36,7 @@
           </mat-card-subtitle>
         </mat-card-header>
 
-        <mat-card-content>
+        <mat-card-content fxLayoutAlign="center center">
           <b>{{ post.description }}</b>
         </mat-card-content>
 
