@@ -3,13 +3,14 @@
   <mat-toolbar-row>
 
     <!-- <div fxLayoutGap="15px" fxFlex="20%"> -->
-    <div fxLayoutGap.gt-xs="20px">
+    <!-- <div fxLayoutGap.gt-xs="15px" fxLayout.lt-lg="30px"> -->
+    <div fxLayoutGap.lt-md="5px" fxLayoutGap.gt-sm="20px">
 
       <button mat-icon-button (click)="toggleSidenav()" fxShow="true" fxHide.gt-sm>
         <mat-icon>menu</mat-icon>
       </button>
 
-      <a routerLink="/" mat-button routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+      <a routerLink="/" mat-button routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" style="padding: 0px;">
         <img src="https://website-images-nathan.s3-us-west-2.amazonaws.com/nathanpickard.com/1.svg" alt="logo"
           style="width: 45px;">
       </a>
@@ -20,7 +21,7 @@
       <a mat-stroked-button routerLink="/portfolio" routerLinkActive="active" fxHide.lt-sm>
         Portfolio
       </a>
-      <a mat-stroked-button routerLink="/about" routerLinkActive="active" fxHide.lt-md>
+      <a mat-stroked-button routerLink="/about" routerLinkActive="active" fxHide.lt-sm>
         About
       </a>
 
@@ -29,8 +30,8 @@
     <span class="spacer"></span>
 
     <!-- <div fxLayoutGap="10px" fxLayoutAlign="space-around center" fxFlex="20%"> -->
-    <div fxLayoutGap.lt-sm="5px" fxLayoutGap.gt-sm="15px" fxLayoutGap.lt-md="10px" fxLayoutAlign="space-around center"
-      fxFlex.gt-md="20%" style="margin-right: 35px;">
+    <div fxLayoutGap.lt-sm="5px" fxLayoutGap.gt-sm="15px" fxLayoutGap.lt-md="2px" fxLayoutAlign="space-around center"
+      fxFlex.gt-md="20%" style="margin-right: 30px;">
 
       <!-- <div fxLayoutAlign="space-around center" fxFlex="20%" fxLayoutGap="10px"> -->
 
