@@ -3,16 +3,17 @@
   <mat-toolbar-row>
 
     <!-- <div fxLayoutGap="15px" fxFlex="20%"> -->
-    <!-- <div fxLayoutGap.gt-xs="15px" fxLayout.lt-lg="30px"> -->
     <div fxLayoutGap.lt-md="5px" fxLayoutGap.gt-sm="20px">
 
       <button mat-icon-button (click)="toggleSidenav()" fxShow="true" fxHide.gt-sm>
         <mat-icon>menu</mat-icon>
       </button>
 
-      <a routerLink="/" mat-button routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" style="padding: 0px;">
-        <img src="https://website-images-nathan.s3-us-west-2.amazonaws.com/nathanpickard.com/1.svg" alt="logo"
-          style="width: 45px;">
+      <a routerLink="/" mat-button routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"
+        style="padding: 0px;">
+        <img
+          src="https://website-images-nathan.s3-us-west-2.amazonaws.com/nathanpickard.com/Blue+Elegant+Badge+Soccer+Logo.svg"
+          alt="logo" style="width: 45px;">
       </a>
 
       <a mat-stroked-button routerLink="/blog" routerLinkActive="active" fxHide.lt-sm>

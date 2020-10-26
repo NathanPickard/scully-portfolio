@@ -24,28 +24,25 @@
 
     <div *ngFor="let post of posts$ | async" style="width: 80%; max-width: 500px;">
 
-      <!-- <div *ngIf="post.date <"> -->
+      <mat-card>
+        <mat-card-header fxLayoutAlign="center center">
+          <mat-card-title style="text-align: center;">
+            <a [routerLink]="post.route">
+              {{ post.title }}
+            </a>
+          </mat-card-title>
+          <mat-card-subtitle fxLayoutAlign="center center">
+            {{ post.date | date: 'shortDate' }}
+          </mat-card-subtitle>
+        </mat-card-header>
 
-    <!-- </div> -->
-    <mat-card>
-      <mat-card-header fxLayoutAlign="center center">
-        <mat-card-title>
-          <a [routerLink]="post.route">
-            {{ post.title }} {{ post.date }}
-          </a>
-        </mat-card-title>
-        <mat-card-subtitle fxLayoutAlign="center center">
-          {{ post.date | date: 'shortDate' }}
-        </mat-card-subtitle>
-      </mat-card-header>
+        <mat-card-content fxLayoutAlign="center center">
+          <b>{{ post.description }}</b>
+        </mat-card-content>
 
-      <mat-card-content fxLayoutAlign="center center">
-        <b>{{ post.description }}</b>
-      </mat-card-content>
+      </mat-card>
 
-    </mat-card>
-
+    </div>
   </div>
-</div>
 
 </div>
