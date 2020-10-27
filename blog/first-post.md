@@ -21,7 +21,7 @@ relatedposts:
 seo:
     metatitle: "How to: Donation Button to Start Accepting Money On Jamstack Sites\n"
     metadescription: "See how accepting donations is a fast &#x26; powerful way to make money on your website. Whether you’re a non-profit or an indie creator, learn how to get started with Stripe in minutes!\n"
-published: false
+published: true
 ---
 
 # Add a Donation Button & Start Accepting Money On Jamstack Sites
