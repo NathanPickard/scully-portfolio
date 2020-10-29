@@ -1,6 +1,7 @@
 ---
 title: "How to improve your code without coding!"
 date: "2018-04-20"
+description: How to increase your coding skills without coding
 ---
 
 # How to improve your code without coding!

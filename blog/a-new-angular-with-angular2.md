@@ -1,6 +1,7 @@
 ---
 title: "A new angle with Angular(2+)"
 date: "2017-11-12"
+description: Let's check out the differences with Angular(2+)
 ---
 
 # A new angle with Angular(2+)

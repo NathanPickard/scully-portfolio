@@ -13,6 +13,7 @@ import { map } from 'rxjs/operators';
 export class BlogRootComponent implements OnInit {
   // links$: Observable<ScullyRoute[]> = this.scully.available$;
   posts$: Observable<ScullyRoute[]>;
+  // filteredRoutes: Observable<ScullyRoute[]>;
 
   constructor(private scully: ScullyRoutesService) { }
 
@@ -22,11 +23,19 @@ export class BlogRootComponent implements OnInit {
     // });
 
     this.posts$ = this.scully.available$.pipe(
-      map(routeList => {
-        console.log(routeList);
-        return routeList.filter((route: ScullyRoute) =>
-          route.route.startsWith(`/blog/`));
-      })
+      map((routeList: ScullyRoute[]) =>
+        // console.log(routeList);
+        // return routeList.filter((route: ScullyRoute) =>
+        //   route.route.startsWith(`/blog/`));
+        routeList.filter(
+          (route: ScullyRoute) =>
+            route.route.startsWith(`/blog/`)
+        )
+      ), map((filteredRoutes: ScullyRoute[]) => {
+        return filteredRoutes.sort((postA: ScullyRoute, postB: ScullyRoute) => {
+          return ((+new Date(postB['date'])) - (+new Date(postA['date'])));
+        });
+      }),
     );
   }
 

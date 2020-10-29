@@ -1,6 +1,7 @@
 ---
 title: "Creating \"Live Music PDX\""
 date: "2018-09-02"
+description: Take a look into how I built Live Music PDX
 ---
 
 # Creating "Live Music PDX"

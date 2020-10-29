@@ -1,6 +1,7 @@
 ---
 title: "Hello!"
 date: "2017-10-15"
+description: Welcome to my blog!
 ---
 
 # Hello!

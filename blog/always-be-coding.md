@@ -5,6 +5,7 @@ description: Make coding a habit!
 ---
 
 # Always be coding!
+#### 1/11/2018
 
 Our habits and daily routines form the basis of our daily lives. Success in any particular endeavor is often achieved when one is able to hone in, refine, and constantly push one's self just a little bit more. In the case of web development, constant technological evolution therefore requires a successful web developer to be steadfast in their own habits and day to day engagements to be sure he or she is successful in creating the software that they envision. Moreover, always learning and keeping an inquisitive mind on the ever evolving state of tech, one is sure to be on the path to becoming a successful web developer, regardless of any programming language or stack they pursue. In other words, stay curious and _always be coding!_
 
