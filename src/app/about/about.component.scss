@@ -1,1 +1,8 @@
-mat-card { background-color: #e1f5fe; }
+mat-card {
+  background-color: #e1f5fe;
+}
+
+mat-card a {
+  text-decoration: none;
+  color: #1565c0;
+}
