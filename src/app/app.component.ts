@@ -1,11 +1,14 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
 
 import { SideNavService } from './side-nav.service';
+import { routeTransitionAnimations } from './route-transition-animations';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
+  animations: [routeTransitionAnimations]
 })
 export class AppComponent implements OnInit {
 
@@ -28,6 +31,10 @@ export class AppComponent implements OnInit {
     this.sideNavService.sideNavToggleSubject.subscribe(() => {
       this.sidenav.toggle();
     });
+  }
+
+  prepareRoute(outlet: RouterOutlet) {
+    return outlet && outlet.activatedRouteData && outlet.activatedRouteData['animationState'];
   }
 
 }

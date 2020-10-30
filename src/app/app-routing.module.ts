@@ -9,13 +9,18 @@ const routes: Routes = [
     path: '', component: HomeComponent
   },
   {
-    path: 'blog', loadChildren: () => import('./blog/blog.module').then(m => m.BlogModule)
+    path: 'blog',
+    loadChildren: () => import('./blog/blog.module').then(m => m.BlogModule),
+    data: { animationState: 'Blog' }
   },
   {
-    path: 'portfolio', loadChildren: () => import('./portfolio/portfolio.module').then(m => m.PortfolioModule)
+    path: 'portfolio',
+    loadChildren: () => import('./portfolio/portfolio.module').then(m => m.PortfolioModule),
+    data: { animationState: 'Portfolio' }
   },
   {
-    path: 'about', component: AboutComponent
+    path: 'about', component: AboutComponent,
+    data: { animationState: 'About' }
   }
 ];
 
