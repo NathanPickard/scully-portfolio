@@ -1,5 +1,5 @@
 ---
-title: "Always be coding!"
+title: "Always Be Coding!"
 date: "2018-01-11"
 description: Make coding a habit!
 ---

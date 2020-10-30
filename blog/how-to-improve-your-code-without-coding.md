@@ -1,5 +1,5 @@
 ---
-title: "How to improve your code without coding!"
+title: "How to Improve Your Code Without Coding!"
 date: "2018-04-20"
 description: How to increase your coding skills without coding
 ---

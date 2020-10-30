@@ -1,5 +1,5 @@
 ---
-title: "Tools of the trade for the modern Web Developer"
+title: "Tools of the Trade for the Modern Web Developer"
 date: "2018-02-11"
 description: Let's check out some tools that can make you a better developer
 ---

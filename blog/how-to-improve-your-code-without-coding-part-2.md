@@ -1,5 +1,5 @@
 ---
-title: "How to improve your code without coding, Part 2!"
+title: "How to Improve Your Code Without Coding, Part 2!"
 date: "2018-06-27"
 description: More ways to become a better developer without coding
 ---
