@@ -1,7 +1,7 @@
 import { trigger, transition, style, query, animate, animateChild, group } from '@angular/animations';
 
 export const routeTransitionAnimations = trigger('triggerName', [
-  transition('Blog => Portfolio, Portfolio => About, Blog => About', [
+  transition('Home => Blog, Home => Portfolio, Home => About, Blog => Portfolio,  Blog => About, Portfolio => About', [
     style({ position: 'relative' }),
     query(':enter, :leave', [
       style({
@@ -14,18 +14,18 @@ export const routeTransitionAnimations = trigger('triggerName', [
     query(':enter', [style({ right: '-100%', opacity: 0 })]),
     query(':leave', animateChild()),
     group([
-      query(':leave', [animate('1s ease-out', style({
+      query(':leave', [animate('300ms ease-out', style({
         right: '100%',
         opacity: 0
       }))]),
-      query(':enter', [animate('1s ease-out', style({
+      query(':enter', [animate('300ms ease-out', style({
         right: '0%',
         opacity: 1
       }))])
     ]),
     query(':enter', animateChild())
   ]),
-  transition('About => Portfolio, Portfolio => Blog, About => Blog', [
+  transition('About => Portfolio, About => Blog, About => Home, Portfolio => Blog, Portfolio => Home, Blog => Home', [
     style({ position: 'relative' }),
     query(':enter, :leave', [
       style({
@@ -38,11 +38,11 @@ export const routeTransitionAnimations = trigger('triggerName', [
     query(':enter', [style({ left: '-100%', opacity: 0 })]),
     query(':leave', animateChild()),
     group([
-      query(':leave', [animate('1s ease-out', style({
+      query(':leave', [animate('300ms ease-out', style({
         left: '100%',
         opacity: 0
       }))]),
-      query(':enter', [animate('1s ease-out', style({
+      query(':enter', [animate('300ms ease-out', style({
         left: '0%',
         opacity: 1
       }))])
