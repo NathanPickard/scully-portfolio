@@ -29,7 +29,7 @@ const routes: Routes = [
     component: NotFoundComponent
   }
 ];
-
+  
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]

@@ -5,6 +5,7 @@ description: Let's check out the differences with Angular(2+)
 ---
 
 # A new angle with Angular(2+)
+#### 11/12/2017
 
 ![angular](https://nathanpickard.files.wordpress.com/2017/11/angular.png?w=300)![AngularJS-Shield-medium](https://nathanpickard.files.wordpress.com/2017/11/angularjs-shield-medium.png?w=286)
 

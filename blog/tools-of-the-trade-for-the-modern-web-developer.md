@@ -5,6 +5,7 @@ description: Let's check out some tools that can make you a better developer
 ---
 
 # Tools of the trade for the modern Web Developer
+#### 2/11/2018
 
 Having reliable and handy tools is essential for nearly every skilled trade. Whether physical or digital, such as a laptop that you can't go without, or a note-taking app that you use day in and day out, utilizing an excellent set of tools can boost your level of productivity and increase the efficiency of your output. Simply just using whatever is available can be sufficient enough, but like moving from a simple hammer to power tools, new ways of getting stuff done efficiently are (quite literally) at a developer's fingertips.
 

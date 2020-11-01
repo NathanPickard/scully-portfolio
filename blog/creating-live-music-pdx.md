@@ -1,10 +1,11 @@
 ---
 title: "Creating \"Live Music PDX\""
 date: "2018-09-02"
-description: Take a look into how I built Live Music PDX
+description: Take a look into how I built "Live Music PDX"
 ---
 
 # Creating "Live Music PDX"
+#### 9/2/2018
 
 There's something about seeing one of your favorite artists perform live that leaves an impression on you.  It can move you and change you while providing memories that last a lifetime.  However, trying to find upcoming live music events can oftentimes be a challenge.
 
