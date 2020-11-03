@@ -7,4 +7,8 @@ import { HttpClient } from '@angular/common/http';
 export class GithubService {
 
   constructor(private httpClient: HttpClient) { }
+
+  getLatesProjects() {
+    return this.httpClient.get('https://api.github.com/users/nathanpickard/repos?sort=updated');
+  }
 }
