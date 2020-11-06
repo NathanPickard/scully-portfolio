@@ -22,6 +22,8 @@ export class AppComponent implements OnInit {
 
   title = 'scully-portfolio';
 
+  recentProjects: any[];
+
   routes = [
     // { path: '/', name: 'Home' },
     { path: '/blog', name: 'Blog' },
@@ -53,7 +55,13 @@ export class AppComponent implements OnInit {
 
   handleProjectSuccess(data) {
     this.foundProjects = data;
-    // console.log(this.foundProjects);
+    this.recentProjects = [];
+    console.log(this.foundProjects);
+
+    for (let i = 0; i < 3; i++) {
+      this.recentProjects.push(this.foundProjects[i]);
+      console.log(this.recentProjects);
+    }
   }
 
   handleError(error) {
