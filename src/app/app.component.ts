@@ -2,7 +2,7 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 
 import { SideNavService } from './side-nav.service';
-import { GithubService } from './github.service';
+
 import { routeTransitionAnimations } from './route-transition-animations';
 
 @Component({
@@ -15,17 +15,11 @@ export class AppComponent implements OnInit {
 
   @ViewChild('sidenav', { static: true }) sidenav;
 
-  foundProjects: any[];
-
-  constructor(private sideNavService: SideNavService,
-    private githubService: GithubService) { }
+  constructor(private sideNavService: SideNavService) { }
 
   title = 'scully-portfolio';
 
-  recentProjects: any[];
-
   routes = [
-    // { path: '/', name: 'Home' },
     { path: '/blog', name: 'Blog' },
     { path: '/portfolio', name: 'Portfolio' },
     { path: '/about', name: 'About' }
@@ -37,35 +31,10 @@ export class AppComponent implements OnInit {
     this.sideNavService.sideNavToggleSubject.subscribe(() => {
       this.sidenav.toggle();
     });
-
-    this.getProjects();
   }
 
   prepareRoute(outlet: RouterOutlet) {
     return outlet && outlet.activatedRouteData && outlet.activatedRouteData['animationState'];
-  }
-
-  getProjects() {
-    return this.githubService.getLatesProjects()
-      .subscribe(
-        data => this.handleProjectSuccess(data),
-        error => this.handleError(error)
-      );
-  }
-
-  handleProjectSuccess(data) {
-    this.foundProjects = data;
-    this.recentProjects = [];
-    console.log(this.foundProjects);
-
-    for (let i = 0; i < 3; i++) {
-      this.recentProjects.push(this.foundProjects[i]);
-      console.log(this.recentProjects);
-    }
-  }
-
-  handleError(error) {
-    console.log(error);
   }
 
 }

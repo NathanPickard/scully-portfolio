@@ -3,14 +3,40 @@
   <h2>Hey there!</h2>
 
   <div style="margin: 20px 50px;">
-    <p style="max-width: 700px;">Pragmatic Full-Stack JavaScript developer with experience in feature-rich, web
+    <p style="max-width: 700px; text-align: center">Pragmatic Full-Stack JavaScript developer with experience in
+      feature-rich, web
       application development and creating
       growth for startups.
     </p>
   </div>
 
-  <a class="twitter-timeline" data-width="400" data-height="500" data-theme="light"
-    href="https://twitter.com/NathanPickard?ref_src=twsrc%5Etfw">Tweets by NathanPickard</a>
+  <div fxLayout="row" fxLayoutGap="50px">
+    <a class="twitter-timeline" data-width="400" data-height="500" data-theme="light"
+      href="https://twitter.com/NathanPickard?ref_src=twsrc%5Etfw">Tweets by NathanPickard
+    </a>
+
+    <div fxLayout="column">
+      <h3>Recently GitHub projects:</h3>
+
+      <div fxLayoutGap="30px" fxLayout="column">
+        <div *ngFor="let recentProject of recentProjects">
+          <mat-card>
+            <mat-card-header>
+              <mat-card-title>
+                <a href="{{ recentProject.html_url }}" target="_blank" style="text-decoration: none;">
+                  {{ recentProject.name }}
+                </a>
+              </mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+              {{ recentProject.description }}
+            </mat-card-content>
+          </mat-card>
+        </div>
+      </div>
+
+    </div>
+  </div>
 
   <!-- <a href="https://dev.to/nathanpickard" target="_blank">
     <img src="https://d2fltix0v2e0sb.cloudfront.net/dev-badge.svg" alt="Nathan Pickard's DEV Profile" height="50"
