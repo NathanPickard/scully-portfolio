@@ -18,15 +18,18 @@
     <div fxLayout="column">
       <h3>Recently GitHub projects:</h3>
 
-      <div fxLayoutGap="30px" fxLayout="column">
+      <div fxLayoutGap="20px" fxLayout="column">
         <div *ngFor="let recentProject of recentProjects">
           <mat-card>
             <mat-card-header>
               <mat-card-title>
-                <a href="{{ recentProject.html_url }}" target="_blank" style="text-decoration: none;">
+                <a href="{{ recentProject.html_url }}" target="_blank">
                   {{ recentProject.name }}
                 </a>
               </mat-card-title>
+              <mat-card-subtitle>
+                Updated: {{ recentProject.updated_at | date: 'shortDate'}}
+              </mat-card-subtitle>
             </mat-card-header>
             <mat-card-content>
               {{ recentProject.description }}
