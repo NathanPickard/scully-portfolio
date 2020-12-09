@@ -2,44 +2,41 @@
   <h1>Check out my work</h1>
 </div>
 
-<div>
 
-  <div fxLayoutGap="30px" fxLayout="column" fxLayoutAlign="center center">
+<div fxLayoutGap="30px" fxLayout="column" fxLayoutAlign="center center">
 
-    <div *ngFor="let project of portfolio$ | async" style="width: 80%; max-width: 500px;">
-
-      <mat-card>
-        <mat-card-header fxLayoutAlign="center center">
-          <mat-card-title>
-            <a [routerLink]="project.route">
-              {{ project.title }}
-            </a>
-          </mat-card-title>
-        </mat-card-header>
-
-        <mat-card-content fxLayoutAlign="center center">
-          <b>{{ project.description }}</b>
-        </mat-card-content>
-      </mat-card>
-
-    </div>
+  <div *ngFor="let project of portfolio$ | async" style="width: 80%; max-width: 500px;">
 
     <mat-card>
       <mat-card-header fxLayoutAlign="center center">
         <mat-card-title>
-          <a href="https://github.com/NathanPickard" target="_blank">
-            Check out more of my projects on GitHub
+          <a [routerLink]="project.route">
+            {{ project.title }}
           </a>
         </mat-card-title>
       </mat-card-header>
+
       <mat-card-content fxLayoutAlign="center center">
-        <a href="https://github.com/NathanPickard" target="_blank">
-          <img src="https://website-images-nathan.s3-us-west-2.amazonaws.com/nathanpickard.com/Octicons-mark-github.svg"
-            style="max-width: 70px;">
-        </a>
+        <b>{{ project.description }}</b>
       </mat-card-content>
     </mat-card>
 
   </div>
+
+  <mat-card>
+    <mat-card-header fxLayoutAlign="center center">
+      <mat-card-title>
+        <a href="https://github.com/NathanPickard" target="_blank">
+          Check out more of my projects on GitHub
+        </a>
+      </mat-card-title>
+    </mat-card-header>
+    <mat-card-content fxLayoutAlign="center center">
+      <a href="https://github.com/NathanPickard" target="_blank">
+        <img src="https://website-images-nathan.s3-us-west-2.amazonaws.com/nathanpickard.com/Octicons-mark-github.svg"
+          style="max-width: 70px;">
+      </a>
+    </mat-card-content>
+  </mat-card>
 
 </div>
