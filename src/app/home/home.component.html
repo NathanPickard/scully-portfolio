@@ -2,43 +2,45 @@
 
   <h2>Hey there!</h2>
 
-  <div style="margin: 20px 50px;">
+  <div style="margin: 20px 20px;">
     <p style="max-width: 700px; text-align: center">Pragmatic Full-Stack JavaScript developer with experience in
       feature-rich, web
       application development and creating
       growth for startups.
     </p>
-  </div>
 
-  <div fxLayout="row" fxLayoutGap="50px">
-    <a class="twitter-timeline" data-width="400" data-height="500" data-theme="light"
-      href="https://twitter.com/NathanPickard?ref_src=twsrc%5Etfw">Tweets by NathanPickard
-    </a>
 
-    <div fxLayout="column">
-      <h3>Recent GitHub projects:</h3>
+    <div fxLayout="row" fxLayoutGap="40px">
+      <a class="twitter-timeline" data-width="400" data-height="500" data-theme="light"
+        href="https://twitter.com/NathanPickard?ref_src=twsrc%5Etfw">Tweets by NathanPickard
+      </a>
 
-      <div fxLayoutGap="20px" fxLayout="column">
-        <div *ngFor="let recentProject of recentProjects">
-          <mat-card>
-            <mat-card-header>
-              <mat-card-title>
-                <a href="{{ recentProject.html_url }}" target="_blank">
-                  {{ recentProject.name }}
-                </a>
-              </mat-card-title>
-              <mat-card-subtitle>
-                Updated: {{ recentProject.updated_at | date: 'shortDate'}}
-              </mat-card-subtitle>
-            </mat-card-header>
-            <mat-card-content>
-              {{ recentProject.description }}
-            </mat-card-content>
-          </mat-card>
+      <div fxLayout="column">
+        <h3>Recent GitHub projects:</h3>
+
+        <div fxLayoutGap="15px" fxLayout="column">
+          <div *ngFor="let recentProject of recentProjects">
+            <mat-card>
+              <mat-card-header>
+                <mat-card-title>
+                  <a href="{{ recentProject.html_url }}" target="_blank">
+                    {{ recentProject.name }}
+                  </a>
+                </mat-card-title>
+                <mat-card-subtitle>
+                  Updated: {{ recentProject.updated_at | date: 'shortDate'}}
+                </mat-card-subtitle>
+              </mat-card-header>
+              <mat-card-content>
+                {{ recentProject.description }}
+              </mat-card-content>
+            </mat-card>
+          </div>
         </div>
-      </div>
 
+      </div>
     </div>
+
   </div>
 
 </div>
