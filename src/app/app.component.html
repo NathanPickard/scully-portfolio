@@ -3,17 +3,13 @@
 <mat-sidenav-container class="all-wrap">
 
   <mat-sidenav #sidenav>
-
     <mat-nav-list>
-
       <mat-list-item *ngFor="let route of routes">
         <a mat-stroked-button [routerLink]="route.path" routerLinkActive="active" (click)="sidenav.toggle()">
           {{ route.name }}
         </a>
       </mat-list-item>
-
     </mat-nav-list>
-
   </mat-sidenav>
 
   <mat-sidenav-content class="page-wrap">
