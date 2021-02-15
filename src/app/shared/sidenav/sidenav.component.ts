@@ -15,6 +15,8 @@ export class SidenavComponent implements OnInit {
 
   @ViewChild('sidenav', { static: true }) sidenav;
 
+  isDark = false;
+
   constructor(private sideNavService: SideNavService) { }
   
   title = 'scully-portfolio';
