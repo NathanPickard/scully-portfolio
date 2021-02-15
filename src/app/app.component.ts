@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { OverlayContainer } from '@angular/cdk/overlay';
 
 import { SideNavService } from './side-nav.service';
 
@@ -15,9 +16,10 @@ export class AppComponent implements OnInit {
 
   @ViewChild('sidenav', { static: true }) sidenav;
 
-  constructor(private sideNavService: SideNavService) { }
+  constructor(private sideNavService: SideNavService, private overlayContainer: OverlayContainer) { }
 
   title = 'scully-portfolio';
+  isDark = false;
 
   routes = [
     { path: '/blog', name: 'Blog' },
@@ -35,6 +37,15 @@ export class AppComponent implements OnInit {
 
   prepareRoute(outlet: RouterOutlet) {
     return outlet && outlet.activatedRouteData && outlet.activatedRouteData['animationState'];
+  }
+
+  toggleTheme(): void {
+    this.isDark = !this.isDark;
+    if (this.isDark) {
+      this.overlayContainer.getContainerElement().classList.add('dark-theme')
+    } else {
+      this.overlayContainer.getContainerElement().classList.remove('dark-theme');
+    }
   }
 
 }
