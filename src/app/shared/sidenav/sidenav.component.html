@@ -1,7 +1,7 @@
 <div [class.dark-theme]="isDark">
   <mat-sidenav-container class="all-wrap">
 
-    <mat-sidenav #sidenav>
+    <mat-sidenav #sidenav [attr.color]="themeColor">
       <mat-nav-list>
         <mat-list-item *ngFor="let route of routes">
           <a mat-stroked-button [routerLink]="route.path" routerLinkActive="active" (click)="sidenav.toggle()">

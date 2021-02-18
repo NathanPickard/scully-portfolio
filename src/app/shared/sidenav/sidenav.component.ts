@@ -15,6 +15,7 @@ export class SidenavComponent implements OnInit {
 
   @ViewChild('sidenav', { static: true }) sidenav;
 
+  themeColor: 'primary';
   isDark = false;
 
   constructor(private sideNavService: SideNavService) { }
