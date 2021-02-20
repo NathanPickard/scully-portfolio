@@ -8,12 +8,14 @@
 @import "./theme.scss";
 
 // Imports custom component themes
-// @import "./custom-component-themes.scss";
+@import "./custom-component-themes.scss";
 
 @include angular-material-theme($my-theme);
+// @include custom-components-theme($my-theme, $sidenav-theme);
 
 .dark-theme {
   @include angular-material-color($dark-theme);
+  // @include custom-components-theme($dark-theme, $sidenav-theme);
 }
 
 // Overrides typography for all Angular Material

@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, Input, OnInit, ViewChild } from '@angular/core';
 import {RouterOutlet } from '@angular/router';
 
 import { SideNavService } from '../../side-nav.service';
@@ -14,9 +14,11 @@ import { routeTransitionAnimations } from '../../route-transition-animations'
 export class SidenavComponent implements OnInit {
 
   @ViewChild('sidenav', { static: true }) sidenav;
+  @Input() isDark;
 
-  themeColor: 'primary';
-  isDark = false;
+  // themeColor: 'primary' | 'accent' | 'warn' = 'primary';
+  themeColor: 'accent';
+  // isDark = false;
 
   constructor(private sideNavService: SideNavService) { }
   
