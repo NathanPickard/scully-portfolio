@@ -11,11 +11,11 @@
 @import "./custom-component-themes.scss";
 
 @include angular-material-theme($my-theme);
-// @include custom-components-theme($my-theme, $sidenav-theme);
+@include custom-components-theme($my-theme);
 
 .dark-theme {
   @include angular-material-color($dark-theme);
-  // @include custom-components-theme($dark-theme, $sidenav-theme);
+  @include custom-components-theme($dark-theme);
 }
 
 // Overrides typography for all Angular Material

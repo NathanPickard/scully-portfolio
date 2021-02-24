@@ -16,8 +16,8 @@ export class SidenavComponent implements OnInit {
   @ViewChild('sidenav', { static: true }) sidenav;
   @Input() isDark;
 
-  // themeColor: 'primary' | 'accent' | 'warn' = 'primary';
-  themeColor: 'accent';
+  themeColor: 'primary' | 'accent' | 'warn' = 'primary';
+  // themeColor: 'accent';
   // isDark = false;
 
   constructor(private sideNavService: SideNavService) { }

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output } from '@angular/core';
 import { OverlayContainer } from '@angular/cdk/overlay';
 
 import { SideNavService } from '../side-nav.service';
@@ -12,6 +12,7 @@ export class NavigationComponent implements OnInit {
 
   themeColor: 'primary' | 'accent' | 'warn' = 'primary';
   isDark = false;
+
 
   constructor(private sideNavService: SideNavService,
     private overlayContainer: OverlayContainer) { }
