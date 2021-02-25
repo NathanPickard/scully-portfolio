@@ -1,8 +1,8 @@
 @import "~@angular/material/theming";
 @mixin sidenav-component-theme($config-or-theme) {
-  // Retrieves variables from theme
+//   // Retrieves variables from theme
   $config: mat-get-color-config($config-or-theme);
-  $primary: mat-get-color-config($config-or-theme);
+  $primary: map-get($config, primary);
   $accent: map-get($config, accent);
   $warn: map-get($config, warn);
   $foreground: map-get($config, foreground);
@@ -19,7 +19,7 @@
     );
 
     @each $key, $val in $color-list {
-      &[color="#{key}"] {
+      &[color="#{$key}"] {
         @include _mat-toolbar-color($val);
         .mat-list-base {
           .mat-list-item {
