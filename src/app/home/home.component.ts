@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+import { ThemeService } from '../shared/theme.service';
 import { GithubService } from '../github.service';
 
 import { ScullyRoutesService, ScullyRoute } from '@scullyio/ng-lib';

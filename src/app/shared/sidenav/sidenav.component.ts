@@ -1,7 +1,8 @@
 import { Component, Input, OnInit, ViewChild } from '@angular/core';
-import {RouterOutlet } from '@angular/router';
+import { RouterOutlet } from '@angular/router';
 
 import { SideNavService } from '../../side-nav.service';
+import { ThemeService } from '../theme.service';
 
 import { routeTransitionAnimations } from '../../route-transition-animations'
 
@@ -14,14 +15,15 @@ import { routeTransitionAnimations } from '../../route-transition-animations'
 export class SidenavComponent implements OnInit {
 
   @ViewChild('sidenav', { static: true }) sidenav;
-  @Input() isDark;
+  // @Input() isDark;
 
   themeColor: 'primary' | 'accent' | 'warn' = 'primary';
   // themeColor: 'accent';
-  // isDark = false;
+  isDark;
 
-  constructor(private sideNavService: SideNavService) { }
-  
+  constructor(private sideNavService: SideNavService,
+    private themeService: ThemeService) { }
+
   title = 'scully-portfolio';
 
   routes = [
@@ -36,6 +38,8 @@ export class SidenavComponent implements OnInit {
     this.sideNavService.sideNavToggleSubject.subscribe(() => {
       this.sidenav.toggle();
     });
+
+    this.themeService.isDark;
   }
 
   prepareRoute(outlet: RouterOutlet) {
