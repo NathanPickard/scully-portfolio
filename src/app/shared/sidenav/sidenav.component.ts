@@ -39,7 +39,7 @@ export class SidenavComponent implements OnInit {
       this.sidenav.toggle();
     });
 
-    this.themeService.isDark;
+    // this.themeService.isDarkTheme;
   }
 
   prepareRoute(outlet: RouterOutlet) {

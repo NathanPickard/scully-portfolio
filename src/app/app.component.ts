@@ -2,6 +2,9 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { OverlayContainer } from '@angular/cdk/overlay';
 
+import { Observable } from 'rxjs';
+
+import { ThemeService } from './shared/theme.service'
 import { SideNavService } from './side-nav.service';
 
 import { routeTransitionAnimations } from './route-transition-animations';
@@ -16,7 +19,11 @@ export class AppComponent implements OnInit {
 
   @ViewChild('sidenav', { static: true }) sidenav;
 
-  constructor(private sideNavService: SideNavService, private overlayContainer: OverlayContainer) { }
+  isDarkTheme: Observable<boolean>;
+
+  constructor(private sideNavService: SideNavService,
+    private themeService: ThemeService,
+    private overlayContainer: OverlayContainer) { }
 
   title = 'scully-portfolio';
   isDark = false;
@@ -28,6 +35,8 @@ export class AppComponent implements OnInit {
   ];
 
   ngOnInit() {
+    this.isDarkTheme = this.themeService.isDarkTheme;
+
     this.sidenav.open();
 
     this.sideNavService.sideNavToggleSubject.subscribe(() => {

@@ -9,11 +9,12 @@ export class ThemeService {
   themeColor: 'primary' | 'accent' | 'warn' = 'primary';
   // isDark = false;
   private _darkTheme: Subject<boolean> = new Subject<boolean>();
-  isDarktheme = this._darkTheme.asObservable();
+  isDarkTheme = this._darkTheme.asObservable();
 
 
   setDarkTheme(isDarkTheme: boolean) {
     this._darkTheme.next(isDarkTheme);
+    console.log(this._darkTheme);
   }
 
 }
