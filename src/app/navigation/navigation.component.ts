@@ -39,7 +39,6 @@ export class NavigationComponent implements OnInit {
   //   }
   // }
 
-  // toggleDarkTheme(isDarkTheme: boolean) {
   toggleDarkTheme(isDarkTheme: boolean) {
     console.log(isDarkTheme);
     this.themeService.setDarkTheme(isDarkTheme);

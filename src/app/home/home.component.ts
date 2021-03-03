@@ -34,11 +34,9 @@ export class HomeComponent implements OnInit {
   handleProjectSuccess(data) {
     this.foundProjects = data;
     this.recentProjects = [];
-    console.log(this.foundProjects);
 
     for (let i = 0; i < 3; i++) {
       this.recentProjects.push(this.foundProjects[i]);
-      console.log(this.recentProjects);
     }
   }
 

@@ -1,6 +1,6 @@
 <app-navigation></app-navigation>
 
-<app-sidenav [ngClass]="'dark-theme'"></app-sidenav>
+<app-sidenav [ngClass]="{'dark-theme': isDarkTheme | async}"></app-sidenav>
 <!-- <mat-sidenav-container class="all-wrap"> -->
 
   <!-- <mat-sidenav #sidenav>
