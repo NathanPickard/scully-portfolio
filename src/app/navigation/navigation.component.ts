@@ -24,6 +24,7 @@ export class NavigationComponent implements OnInit {
 
   ngOnInit(): void {
     this.isDarkTheme = this.themeService.isDarkTheme;
+    console.log("ngOnInit: ", this.isDarkTheme);
   }
 
   toggleSidenav() {
@@ -38,6 +39,7 @@ export class NavigationComponent implements OnInit {
   //     this.overlayContainer.getContainerElement().classList.remove('dark-theme');
   //   }
   // }
+
 
   toggleDarkTheme(isDarkTheme: boolean) {
     console.log(isDarkTheme);
