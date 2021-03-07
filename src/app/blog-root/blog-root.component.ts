@@ -2,7 +2,7 @@ import { Component, HostBinding, OnInit } from '@angular/core';
 
 import { ScullyRoutesService, ScullyRoute } from '@scullyio/ng-lib';
 
-// import { pageAnimations } from '../animations';
+import { pageAnimations } from '../animations';
 
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
@@ -11,7 +11,7 @@ import { map } from 'rxjs/operators';
   selector: 'app-blog-root',
   templateUrl: './blog-root.component.html',
   styleUrls: ['./blog-root.component.scss'],
-  // animations: [pageAnimations]
+  animations: [pageAnimations]
 })
 export class BlogRootComponent implements OnInit {
   // @HostBinding('@pageAnimation')
