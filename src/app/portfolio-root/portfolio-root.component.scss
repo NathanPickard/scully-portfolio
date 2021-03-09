@@ -3,6 +3,14 @@ mat-card {
 }
 
 mat-card a {
+  // text-decoration: none;
+  color: #1565c0;
+}
+
+a {
   text-decoration: none;
+}
+
+mat-card-title {
   color: #1565c0;
 }
