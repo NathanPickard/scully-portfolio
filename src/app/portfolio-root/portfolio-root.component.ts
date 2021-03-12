@@ -2,13 +2,16 @@ import { Component, OnInit } from '@angular/core';
 
 import { ScullyRoutesService, ScullyRoute } from '@scullyio/ng-lib';
 
+import { pageAnimations } from '../animations';
+
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 
 @Component({
   selector: 'app-portfolio-root',
   templateUrl: './portfolio-root.component.html',
-  styleUrls: ['./portfolio-root.component.scss']
+  styleUrls: ['./portfolio-root.component.scss'],
+  animations: [pageAnimations]
 })
 export class PortfolioRootComponent implements OnInit {
   portfolio$: Observable<ScullyRoute[]>;
