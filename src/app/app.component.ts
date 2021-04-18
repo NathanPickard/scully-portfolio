@@ -5,9 +5,9 @@ import { OverlayContainer } from '@angular/cdk/overlay';
 import { Observable } from 'rxjs';
 
 import { ThemeService } from './shared/theme.service'
-import { SideNavService } from './side-nav.service';
+import { SideNavService } from './shared/side-nav.service';
 
-import { routeTransitionAnimations } from './route-transition-animations';
+import { routeTransitionAnimations } from './shared/route-transition-animations';
 
 @Component({
   selector: 'app-root',

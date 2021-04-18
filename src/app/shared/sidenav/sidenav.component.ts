@@ -1,10 +1,10 @@
 import { Component, Input, OnInit, ViewChild } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 
-import { SideNavService } from '../../side-nav.service';
+import { SideNavService } from '../side-nav.service';
 import { ThemeService } from '../theme.service';
 
-import { routeTransitionAnimations } from '../../route-transition-animations'
+import { routeTransitionAnimations } from '../route-transition-animations'
 
 @Component({
   selector: 'app-sidenav',

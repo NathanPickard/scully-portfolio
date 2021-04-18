@@ -8,7 +8,7 @@ export class GithubService {
 
   constructor(private httpClient: HttpClient) { }
 
-  getLatesProjects() {
+  getLatestProjects() {
     return this.httpClient.get('https://api.github.com/users/nathanpickard/repos?sort=updated');
   }
 }

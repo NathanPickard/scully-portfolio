@@ -4,7 +4,7 @@ import { ScullyLibModule } from '@scullyio/ng-lib';
 import { BlogRoutingModule } from './blog-routing.module';
 import { BlogComponent } from './blog.component';
 
-import { MaterialModule } from '../material.module';
+import { MaterialModule } from '../shared/material.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({

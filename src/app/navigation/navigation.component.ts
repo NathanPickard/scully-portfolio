@@ -2,7 +2,7 @@ import { Component, OnInit, Output } from '@angular/core';
 import { OverlayContainer } from '@angular/cdk/overlay';
 import { Observable } from 'rxjs';
 
-import { SideNavService } from '../side-nav.service';
+import { SideNavService } from '../shared/side-nav.service';
 
 import { ThemeService } from '../shared/theme.service';
 

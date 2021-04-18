@@ -3,7 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { AboutComponent } from './about/about.component';
 import { HomeComponent } from './home/home.component';
-import { NotFoundComponent } from './404.component';
+import { NotFoundComponent } from './shared/404.component';
 
 const routes: Routes = [
   {

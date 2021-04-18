@@ -4,7 +4,7 @@ import { ScullyLibModule } from '@scullyio/ng-lib';
 import { PortfolioRoutingModule } from './portfolio-routing.module';
 import { PortfolioComponent } from './portfolio.component';
 
-import { MaterialModule } from '../material.module';
+import { MaterialModule } from '../shared/material.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({

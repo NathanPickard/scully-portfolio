@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { ThemeService } from '../shared/theme.service';
-import { GithubService } from '../github.service';
+import { GithubService } from '../shared/github.service';
 
 import { ScullyRoutesService, ScullyRoute } from '@scullyio/ng-lib';
 import { Observable } from 'rxjs';
@@ -24,7 +24,7 @@ export class HomeComponent implements OnInit {
   }
 
   getProjects() {
-    return this.githubService.getLatesProjects()
+    return this.githubService.getLatestProjects()
       .subscribe(
         data => this.handleProjectSuccess(data),
         error => this.handleError(error)
