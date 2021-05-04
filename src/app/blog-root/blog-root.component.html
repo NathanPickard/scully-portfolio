@@ -3,9 +3,7 @@
 </div>
 
 <div fxLayoutGap="30px" fxLayout="column" fxLayoutAlign="center center">
-
   <div *ngFor="let post of posts$ | async" style="width: 85%; max-width: 600px;" class="post" @fadeSlideInOut>
-
     <mat-card>
       <mat-card-header fxLayoutAlign="center center">
         <mat-card-title style="text-align: center;">
@@ -17,12 +15,9 @@
           {{ post.date | date: 'shortDate' }}
         </mat-card-subtitle>
       </mat-card-header>
-
       <mat-card-content style="text-align: center;">
         <p>{{ post.description }}</p>
       </mat-card-content>
-
     </mat-card>
-
   </div>
 </div>
