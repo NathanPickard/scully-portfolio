@@ -18,15 +18,15 @@
       "warn": $warn
     );
 
-    @each $key, $val in $color-list {
-      &[color="#{$key}"] {
-        @include _mat-toolbar-color($val);
-        .mat-list-base {
-          .mat-list-item {
-            color: mat-color($val, default-contrast);
-          }
-        }
-      }
-    }
+    // @each $key, $val in $color-list {
+    //   &[color="#{$key}"] {
+    //     @include _mat-toolbar-color($val);
+    //     .mat-list-base {
+    //       .mat-list-item {
+    //         color: mat-color($val, default-contrast);
+    //       }
+    //     }
+    //   }
+    // }
   }
 }
