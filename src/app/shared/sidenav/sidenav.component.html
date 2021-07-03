@@ -1,6 +1,5 @@
 <div [class.dark-theme]="isDark">
   <mat-sidenav-container class="all-wrap">
-
     <mat-sidenav #sidenav [attr.color]="themeColor">
       <mat-nav-list>
         <mat-list-item *ngFor="let route of routes">
@@ -12,27 +11,22 @@
     </mat-sidenav>
 
     <mat-sidenav-content class="page-wrap">
-
       <div class="app-header" fxLayoutAlign="center center" fxLayout="row" fxLayout.xs="column" fxLayoutGap="50px"
         fxLayoutGap.xs="5px">
 
         <div fxLayoutAlign="center center" fxLayout="column" style="text-align: center;" fxLayoutGap="12px">
           <h1 style="font-size: 35px;">Nathan Pickard</h1>
-
           <h2>Web Developer in Portland, Oregon</h2>
           <h3>I make ideas a reality using Javascript</h3>
-
           <div fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="30px">
             <img
               src="https://website-images-nathan.s3-us-west-2.amazonaws.com/nathanpickard.com/pVCahxP-oregon-outline-vector.svg"
               style="max-width: 65px;" alt="Oregon">
-
             <svg style="width:44px;height:44px" className="w-6 h-6" fill="none" stroke="currentColor"
               viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
                 d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
             </svg>
-
           </div>
         </div>
 
@@ -43,15 +37,12 @@
             src="https://website-images-nathan.s3-us-west-2.amazonaws.com/nathanpickard.com/IMG_20201007_162639+(1).jpg"
             alt="Nathan Pickard">
         </div>
-
       </div>
 
       <!-- <div [@triggerName]="prepareRoute(outlet)" style="margin: 20px 0px;"> -->
       <div [@triggerName]="prepareRoute(outlet)" fxFlexFill class="content">
         <router-outlet #outlet="outlet"></router-outlet>
       </div>
-
     </mat-sidenav-content>
-
   </mat-sidenav-container>
 </div>
