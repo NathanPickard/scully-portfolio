@@ -7,7 +7,6 @@ import { PortfolioRootComponent } from './portfolio-root.component';
 import { MaterialModule } from '../shared/material.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
-
 @NgModule({
   declarations: [PortfolioRootComponent],
   imports: [

@@ -38,7 +38,6 @@ export class SidenavComponent implements OnInit {
     this.sideNavService.sideNavToggleSubject.subscribe(() => {
       this.sidenav.toggle();
     });
-
     // this.themeService.isDarkTheme;
   }
 

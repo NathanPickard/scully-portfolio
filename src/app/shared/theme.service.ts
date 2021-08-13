@@ -11,7 +11,6 @@ export class ThemeService {
   private _darkTheme: Subject<boolean> = new Subject<boolean>();
   isDarkTheme = this._darkTheme.asObservable();
 
-
   setDarkTheme(isDarkTheme: boolean) {
     console.log("isDarkTheme: ", isDarkTheme);
     this._darkTheme.next(isDarkTheme);

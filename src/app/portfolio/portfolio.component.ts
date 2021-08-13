@@ -9,7 +9,6 @@ declare var ng: any;
   styleUrls: ['./portfolio.component.scss'],
   preserveWhitespaces: true,
   encapsulation: ViewEncapsulation.Emulated
-
 })
 export class PortfolioComponent implements OnInit {
   ngOnInit() {}
