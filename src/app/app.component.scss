@@ -1,7 +1,6 @@
 @import '~@angular/material/theming';
 
 footer {
-  // background-color: #e0f2f1;
   background-color: #e1f5fe;
   text-decoration: none;
   padding: 10px 0px;
@@ -9,14 +8,6 @@ footer {
 
 .all-wrap {
   min-height: 100vh;
-  // background-color: #e0f2f1;
-
-  // background-color: #e1f5fe;
-  // background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(21, 101, 192, 0.3)),
-  // background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(192, 112, 21, 0.7)),
-  // background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(0, 105, 92, 0.6)),
-  // background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(49, 104, 0, 0.7)),
-  // background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(225, 245, 254, 0.8)),
   background: linear-gradient(rgba(21, 101, 192, 1), rgba(225, 245, 254, 0.8))
     // url("https://website-images-nathan.s3-us-west-2.amazonaws.com/nathanpickard.com/bg-018.jpg")
       no-repeat;
@@ -55,21 +46,15 @@ footer {
   border-radius: 150px;
 }
 
-// .github-bg:hover {
-//   background-color: black;
-// }
-
 .linkedin:hover {
   fill: #2867B2;
 }
 
 .app-header {
-  // background-color: #e1f5fe;
   margin: 20px 40px;
 }
 
 .active {
-  // background-color: #4D000D;
   background-color: #1e88e5;
   color: white;
 }
