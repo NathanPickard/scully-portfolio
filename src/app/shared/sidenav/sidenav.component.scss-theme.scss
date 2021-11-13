@@ -1,4 +1,4 @@
-@import "~@angular/material/theming";
+@import "@angular/material/theming";
 @mixin sidenav-component-theme($config-or-theme) {
 //   // Retrieves variables from theme
   $config: mat-get-color-config($config-or-theme);
