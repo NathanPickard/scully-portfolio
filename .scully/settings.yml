@@ -1,2 +1,11 @@
 identifier: kaf3l4td9616i5yb
 allowErrorCollect: false
+appPort: 1864
+staticPort: 1668
+reloadPort: 2667
+hostName: localhost
+projectName: scully-portfolio
+homeFolder: /Users/nathanpickard/web-projects/scully-portfolio
+distFolder: dist/scully-portfolio
+outDir: /Users/nathanpickard/web-projects/scully-portfolio/dist/static
+handle404: ''
